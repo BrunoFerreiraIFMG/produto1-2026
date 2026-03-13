@@ -6,11 +6,10 @@ import br.ifmg.produto1_2026.service.CategoriaService;
 import br.ifmg.produto1_2026.service.exception.RegistroNaoEncontrado;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,10 +31,30 @@ public ResponseEntity<List<CategoriaDTO>> categorias(){
 
 @GetMapping("/{id}")
 public ResponseEntity<CategoriaDTO> categoria(@PathVariable Long id){
-
-    CategoriaDTO dto = categoriaService.findById(id);
+    CategoriaDTO dto= categoriaService.findById(id);
     return ResponseEntity.ok().body(dto);
 }
+
+@PostMapping
+public ResponseEntity<CategoriaDTO> insert(
+        @RequestBody CategoriaDTO dto){
+    //inserindo no BD e pegando o objeto inserido.
+    CategoriaDTO retorno
+            = categoriaService.insert(dto);
+    //criando um link para acessa a categoria criada.
+    URI location = ServletUriComponentsBuilder
+            .fromCurrentRequest()
+            .path("/{id}")
+            .buildAndExpand(retorno.getId())
+            .toUri();
+
+    //enviando a categoria criada.
+    return  ResponseEntity
+            .created(location)
+            .body(retorno);
+}
+
+
 
 
 
