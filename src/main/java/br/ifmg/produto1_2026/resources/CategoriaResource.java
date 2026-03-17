@@ -3,6 +3,7 @@ package br.ifmg.produto1_2026.resources;
 import br.ifmg.produto1_2026.dto.CategoriaDTO;
 import br.ifmg.produto1_2026.entities.Categoria;
 import br.ifmg.produto1_2026.service.CategoriaService;
+import br.ifmg.produto1_2026.service.exception.ErroNoBancoDeDados;
 import br.ifmg.produto1_2026.service.exception.RegistroNaoEncontrado;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +23,13 @@ public class CategoriaResource {
 
 
 @GetMapping
-public ResponseEntity<List<CategoriaDTO>> categorias(){
+public ResponseEntity<List<CategoriaDTO>> categorias(
+        @RequestParam(value = "page", defaultValue = "0") Integer page,
+        @RequestParam(value = "linesPerPage", defaultValue = "10") Integer linesPerPage,
+        @RequestParam(value = "direction", defaultValue = "ASC") String direction,
+        @RequestParam(value = "sort", defaultValue = "id") String sort
+
+){
 
     List<CategoriaDTO> categorias =
                           categoriaService.findAll();
@@ -54,8 +61,32 @@ public ResponseEntity<CategoriaDTO> insert(
             .body(retorno);
 }
 
+@DeleteMapping("/{id}")
+public ResponseEntity<Void> delete(@PathVariable Long id){
 
+        categoriaService.delete(id);
+
+
+    return ResponseEntity.noContent().build();
+}
+
+@PutMapping("/{id}")
+public ResponseEntity<CategoriaDTO> update(
+        @PathVariable Long id,
+        @RequestBody CategoriaDTO dto){
+
+    CategoriaDTO retorno =  categoriaService.update(id,dto);
+
+    return  ResponseEntity.ok().body(retorno);
+}
 
 
 
 }
+
+
+
+
+
+
+

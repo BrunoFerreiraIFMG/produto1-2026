@@ -83,8 +83,24 @@ public class CategoriaService {
     }
 
 
+    public CategoriaDTO update(Long id, CategoriaDTO dto) {
 
+        if (!categoriaRepository.existsById(id)) {
+            throw new RegistroNaoEncontrado("Categoria não encontrada, para ser alterada.");
+        }
 
+        Categoria entity =
+                categoriaRepository.getReferenceById(id);
 
-
+        entity.setNome(dto.getNome());//sobrescrevi o nome antigo
+        entity = categoriaRepository.save(entity);
+        return new CategoriaDTO(entity);
+    }
 }
+
+
+
+
+
+
+
