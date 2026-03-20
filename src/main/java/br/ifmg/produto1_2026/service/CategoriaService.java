@@ -7,11 +7,12 @@ import br.ifmg.produto1_2026.service.exception.ErroNoBancoDeDados;
 import br.ifmg.produto1_2026.service.exception.RegistroNaoEncontrado;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -23,24 +24,13 @@ public class CategoriaService {
     private CategoriaRepository categoriaRepository;
 
     @Transactional(readOnly = true)
-    public List<CategoriaDTO> findAll() {
+    public Page<CategoriaDTO> findAll(Pageable pageRequest) {
 
         //Lista com os dados do BD.
-        List<Categoria> categorias =
-                categoriaRepository.findAll();
+        Page<Categoria> categorias =
+                categoriaRepository.findAll(pageRequest);
 
-        //Lista com os dados convertidos em DTO
-        //List<CategoriaDTO> categoriasDTO =
-        //                 new ArrayList<CategoriaDTO>();
-
-        //for (Categoria categoria : categorias) {
-        //    categoriasDTO.add(new CategoriaDTO(categoria));
-        //}
-
-
-        return categorias.stream()
-                .map( x ->
-                new CategoriaDTO(x)).collect(Collectors.toList());
+        return categorias.map(CategoriaDTO::new);
     }
 
 
