@@ -15,6 +15,85 @@
 						"method": "GET",
 						"header": [],
 						"url": {
+							"raw": "http://{{host}}/categoria?page=0&size=2&sort=id,asc",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"categoria"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "sort",
+									"value": "id,asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{host}}/categoria/2",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"categoria",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{host}}/categoria/2",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"categoria",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Bicicleta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
 							"raw": "http://{{host}}/categoria",
 							"protocol": "http",
 							"host": [
@@ -28,19 +107,28 @@
 					"response": []
 				},
 				{
-					"name": "Get one",
+					"name": "Update",
 					"request": {
-						"method": "GET",
+						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Mesa e banho\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://{{host}}/categoria/5",
+							"raw": "http://{{host}}/categoria/2",
 							"protocol": "http",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"categoria",
-								"5"
+								"2"
 							]
 						}
 					},
@@ -50,7 +138,137 @@
 		},
 		{
 			"name": "Produto",
-			"item": []
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{host}}/produto?page=1&sort=nome&size=3&direction=DESC",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"produto"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sort",
+									"value": "nome"
+								},
+								{
+									"key": "size",
+									"value": "3"
+								},
+								{
+									"key": "direction",
+									"value": "DESC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{host}}/produto/2",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"produto",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{host}}/produto/2",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"produto",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Bicicleta Caloi\",\r\n    \"descricao\": \"Essa é uma Bicicleta muito boa\",\r\n    \"preco\": 1000.60,\r\n    \"imgUrl\": \"https:\\\\shopee.com\\fotoDaBiclicleta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/produto",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"produto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Bicicleta Caloi\",\r\n    \"descricao\": \"Essa é uma Bicicleta muito boa\",\r\n    \"preco\": 1000.60,\r\n    \"imgUrl\": \"https:\\\\shopee.com\\fotoDaBiclicleta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/produto/2",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"produto",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
