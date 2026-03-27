@@ -200,14 +200,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://{{host}}/produto/2",
+							"raw": "http://{{host}}/produto/6",
 							"protocol": "http",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"produto",
-								"2"
+								"6"
 							]
 						}
 					},
@@ -255,14 +255,148 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/produto/2",
+							"raw": "http://{{host}}/produto/6",
 							"protocol": "http",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"produto",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{host}}/usuario?page=1&sort=nome&size=3&direction=DESC",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"usuario"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sort",
+									"value": "nome"
+								},
+								{
+									"key": "size",
+									"value": "3"
+								},
+								{
+									"key": "direction",
+									"value": "DESC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{host}}/usuario/2",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"usuario",
 								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{host}}/usuario/6",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"usuario",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Bicicleta Caloi\",\r\n    \"descricao\": \"Essa é uma Bicicleta muito boa\",\r\n    \"preco\": 1000.60,\r\n    \"imgUrl\": \"https:\\\\shopee.com\\fotoDaBiclicleta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/usuario",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Bicicleta Caloi\",\r\n    \"descricao\": \"Essa é uma Bicicleta muito boa\",\r\n    \"preco\": 1000.60,\r\n    \"imgUrl\": \"https:\\\\shopee.com\\fotoDaBiclicleta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/usuario/6",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"usuario",
+								"6"
 							]
 						}
 					},
