@@ -14,7 +14,7 @@ public class NotificacaoEmail implements Notificador {
         System.out.println("NotificacaoEmail criado com sucesso!");
         this.servidorSmpt = servidorSmpt;
     }
-//10 - iniciando com injeção de dependencia
+
     public void notificar(Usuario usuario, String mensagem) {
 
         if (caixaAlta) {

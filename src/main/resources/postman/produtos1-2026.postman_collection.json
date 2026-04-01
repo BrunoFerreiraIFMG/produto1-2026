@@ -145,7 +145,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://{{host}}/produto?page=1&sort=nome&size=3&direction=DESC",
+							"raw": "http://{{host}}/produto?page=0&sort=nome&size=10&direction=DESC",
 							"protocol": "http",
 							"host": [
 								"{{host}}"
@@ -156,7 +156,7 @@
 							"query": [
 								{
 									"key": "page",
-									"value": "1"
+									"value": "0"
 								},
 								{
 									"key": "sort",
@@ -164,7 +164,7 @@
 								},
 								{
 									"key": "size",
-									"value": "3"
+									"value": "10"
 								},
 								{
 									"key": "direction",
@@ -220,7 +220,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Bicicleta Caloi\",\r\n    \"descricao\": \"Essa é uma Bicicleta muito boa\",\r\n    \"preco\": 1000.60,\r\n    \"imgUrl\": \"https:\\\\shopee.com\\fotoDaBiclicleta\"\r\n}",
+							"raw": "{\r\n    \"nome\": \"Bicicleta Caloi\",\r\n    \"descricao\": \"Essa é uma Bicicleta muito boa\",\r\n    \"preco\": 1000.60,\r\n    \"imgUrl\": \"https:\\\\shopee.com\\fotoDaBiclicleta\",\r\n    \"categorias\": [\r\n               {\"id\": 4 },\r\n               {\"id\": 1 }\r\n                  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -279,7 +279,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://{{host}}/usuario?page=1&sort=nome&size=3&direction=DESC",
+							"raw": "http://{{host}}/usuario?page=0&sort=nome&size=3&direction=DESC",
 							"protocol": "http",
 							"host": [
 								"{{host}}"
@@ -290,7 +290,7 @@
 							"query": [
 								{
 									"key": "page",
-									"value": "1"
+									"value": "0"
 								},
 								{
 									"key": "sort",
@@ -354,7 +354,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Bicicleta Caloi\",\r\n    \"descricao\": \"Essa é uma Bicicleta muito boa\",\r\n    \"preco\": 1000.60,\r\n    \"imgUrl\": \"https:\\\\shopee.com\\fotoDaBiclicleta\"\r\n}",
+							"raw": "{\r\n    \"nome\": \"maria\",\r\n    \"telefone\": \"373322-2222\",\r\n    \"email\": \"maria@gmail.com\",\r\n    \"senha\": \"123456\",\r\n    \"perfis\": [\r\n        {\r\n            \"id\": 3,\r\n            \"nome\": \"ROLE_CLIENTE\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -381,7 +381,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Bicicleta Caloi\",\r\n    \"descricao\": \"Essa é uma Bicicleta muito boa\",\r\n    \"preco\": 1000.60,\r\n    \"imgUrl\": \"https:\\\\shopee.com\\fotoDaBiclicleta\"\r\n}",
+							"raw": "{\r\n    \"nome\": \"mari jose\",\r\n    \"telefone\": \"373322-2222\",\r\n    \"email\": \"maria@gmail.com\",\r\n    \"senha\": \"123456\",\r\n    \"perfis\": [\r\n        {\r\n            \"id\": 3,\r\n            \"nome\": \"ROLE_CLIENTE\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -389,14 +389,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/usuario/6",
+							"raw": "http://{{host}}/usuario/2",
 							"protocol": "http",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"usuario",
-								"6"
+								"2"
 							]
 						}
 					},
