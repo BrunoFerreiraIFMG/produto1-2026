@@ -1,6 +1,7 @@
 package br.ifmg.produto1_2026.service;
 
 import br.ifmg.produto1_2026.dto.CategoriaDTO;
+import br.ifmg.produto1_2026.dto.UsuarioDTO;
 import br.ifmg.produto1_2026.entities.Categoria;
 import br.ifmg.produto1_2026.repositories.CategoriaRepository;
 import br.ifmg.produto1_2026.service.exception.ErroNoBancoDeDados;
@@ -84,6 +85,10 @@ public class CategoriaService {
 
         entity.setNome(dto.getNome());//sobrescrevi o nome antigo
         entity = categoriaRepository.save(entity);
+
+
+
+
         return new CategoriaDTO(entity);
     }
 }

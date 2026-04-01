@@ -27,7 +27,7 @@ public class Categoria {
                    new HashSet<Produto>();
 
 
-// 08 - implementando usuario e perfil
+
     public Categoria() {
     }
 

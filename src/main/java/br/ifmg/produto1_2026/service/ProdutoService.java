@@ -5,6 +5,7 @@ import br.ifmg.produto1_2026.dto.CategoriaDTO;
 import br.ifmg.produto1_2026.dto.ProdutoDTO;
 import br.ifmg.produto1_2026.entities.Categoria;
 import br.ifmg.produto1_2026.entities.Produto;
+import br.ifmg.produto1_2026.repositories.CategoriaRepository;
 import br.ifmg.produto1_2026.repositories.ProdutoRepository;
 import br.ifmg.produto1_2026.service.exception.ErroNoBancoDeDados;
 import br.ifmg.produto1_2026.service.exception.RegistroNaoEncontrado;
@@ -23,7 +24,8 @@ public class ProdutoService {
     @Autowired
     private ProdutoRepository repository;
 
-
+    @Autowired
+    private CategoriaRepository categoriaRepository;
 
     @Transactional(readOnly = true)
     public Page<ProdutoDTO> findAll(Pageable pageRequest) {
@@ -54,10 +56,8 @@ public class ProdutoService {
     public ProdutoDTO insert(ProdutoDTO dto) {
 
         Produto entity = new Produto();
-        entity.setNome(dto.getNome());
-        entity.setDescricao(dto.getDescricao());
-        entity.setPreco(dto.getPreco());
-        entity.setImgUrl(dto.getImgUrl());
+        coptDtoToEntity(dto, entity);
+
 
         Produto novo = repository.save(entity);
         return new ProdutoDTO(novo);
@@ -88,15 +88,26 @@ public class ProdutoService {
         Produto entity =
                 repository.getReferenceById(id);
 
-        entity.setNome(dto.getNome());//sobrescrevi o nome antigo
-        entity.setDescricao(dto.getDescricao());
-        entity.setPreco(dto.getPreco());
-        entity.setImgUrl(dto.getImgUrl());
+        coptDtoToEntity(dto, entity);
 
         entity = repository.save(entity);
         return new ProdutoDTO(entity);
     }
 
+    private void coptDtoToEntity(ProdutoDTO dto, Produto entity) {
+        entity.setNome(dto.getNome());//sobrescrevi o nome antigo
+        entity.setDescricao(dto.getDescricao());
+        entity.setPreco(dto.getPreco());
+        entity.setImgUrl(dto.getImgUrl());
+
+        entity.getCategorias().clear();
+        for (CategoriaDTO catDto : dto.getCategorias()){
+            Categoria cat =
+                    categoriaRepository
+                            .getReferenceById(catDto.getId());
+            entity.getCategorias().add(cat);
+        }
+    }
 
 
 }

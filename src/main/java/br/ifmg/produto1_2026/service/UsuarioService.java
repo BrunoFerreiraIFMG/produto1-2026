@@ -1,8 +1,11 @@
 package br.ifmg.produto1_2026.service;
 
 
+import br.ifmg.produto1_2026.dto.PerfilDTO;
 import br.ifmg.produto1_2026.dto.UsuarioDTO;
+import br.ifmg.produto1_2026.entities.Perfil;
 import br.ifmg.produto1_2026.entities.Usuario;
+import br.ifmg.produto1_2026.repositories.PerfilRepository;
 import br.ifmg.produto1_2026.repositories.UsuarioRepository;
 import br.ifmg.produto1_2026.service.exception.ErroNoBancoDeDados;
 import br.ifmg.produto1_2026.service.exception.RegistroNaoEncontrado;
@@ -20,7 +23,8 @@ public class UsuarioService {
 
     @Autowired
     private UsuarioRepository repository;
-
+    @Autowired
+    private PerfilRepository perfilRepository;
 
 
     @Transactional(readOnly = true)
@@ -52,10 +56,8 @@ public class UsuarioService {
     public UsuarioDTO insert(UsuarioDTO dto) {
 
         Usuario entity = new Usuario();
-        entity.setNome(dto.getNome());
-        entity.setEmail(dto.getEmail());
-        entity.setSenha(dto.getSenha());
-        entity.setTelefone(dto.getTelefone());
+        copyDtoToEntity(dto, entity);
+
 
         Usuario novo = repository.save(entity);
         return new UsuarioDTO(novo);
@@ -86,16 +88,28 @@ public class UsuarioService {
         Usuario entity =
                 repository.getReferenceById(id);
 
-        entity.setNome(dto.getNome());//sobrescrevi o nome antigo
-        entity.setEmail(dto.getEmail());
-        entity.setSenha(dto.getSenha());
-        entity.setTelefone(dto.getTelefone());
-
+        copyDtoToEntity(dto, entity);
 
         entity = repository.save(entity);
         return new UsuarioDTO(entity);
     }
 
+
+    private void copyDtoToEntity(UsuarioDTO dto, Usuario entity) {
+        entity.setNome(dto.getNome());
+        entity.setEmail(dto.getEmail());
+        entity.setSenha(dto.getSenha());
+        entity.setTelefone(dto.getTelefone());
+
+        entity.getPerfis().clear();
+        for (PerfilDTO perfilDto: dto.getPerfis()){
+
+            Perfil perfil =
+                    perfilRepository
+                            .getReferenceById(perfilDto.getId());
+            entity.getPerfis().add(perfil);
+        }
+    }
 
 
 }

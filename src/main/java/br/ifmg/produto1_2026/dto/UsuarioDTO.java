@@ -6,6 +6,8 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class UsuarioDTO {
@@ -16,6 +18,8 @@ public class UsuarioDTO {
     private String email;
     private String senha;
 
+    private List<PerfilDTO> perfis
+                    = new ArrayList<>();
 
     public UsuarioDTO(){
 
@@ -29,6 +33,8 @@ public class UsuarioDTO {
         this.email = email;
         this.senha = senha;
 
+
+
     }
 
     public UsuarioDTO(Usuario usuario) {
@@ -37,6 +43,15 @@ public class UsuarioDTO {
         this.telefone = usuario.getTelefone();
         this.email = usuario.getEmail();
         this.senha = usuario.getSenha();
+
+        usuario
+                .getPerfis()
+                .forEach(
+                        role->
+                                this.perfis.add(
+                                        new PerfilDTO(role)
+                                )
+                );
 
     }
 
@@ -81,7 +96,13 @@ public class UsuarioDTO {
         this.senha = senha;
     }
 
+    public List<PerfilDTO> getPerfis() {
+        return perfis;
+    }
 
+    public void setPerfis(List<PerfilDTO> perfis) {
+        this.perfis = perfis;
+    }
 
     @Override
     public String toString() {
