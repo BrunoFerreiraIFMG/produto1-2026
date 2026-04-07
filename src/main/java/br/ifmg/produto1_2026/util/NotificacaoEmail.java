@@ -3,7 +3,7 @@ package br.ifmg.produto1_2026.util;
 import br.ifmg.produto1_2026.entities.Usuario;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class NotificacaoEmail implements Notificador {
 
     private boolean caixaAlta;
@@ -25,4 +25,20 @@ public class NotificacaoEmail implements Notificador {
                 usuario.getNome(), usuario.getEmail(), servidorSmpt, mensagem);
     }
 
+
+    public boolean isCaixaAlta() {
+        return caixaAlta;
+    }
+
+    public void setCaixaAlta(boolean caixaAlta) {
+        this.caixaAlta = caixaAlta;
+    }
+
+    public String getServidorSmpt() {
+        return servidorSmpt;
+    }
+
+    public void setServidorSmpt(String servidorSmpt) {
+        this.servidorSmpt = servidorSmpt;
+    }
 }
