@@ -13,9 +13,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 
-@Configuration
+//@Configuration
 public class ProdutosConfig {
-
+/*
     @Value("${notificador.email.host}")
     private String servidorSMTP;
 
@@ -48,7 +48,7 @@ public class ProdutosConfig {
 
         return notificacaoSMS;
     }
-
+*/
 
 /*
     //nessa caso, a criação do bean não seria necessária,

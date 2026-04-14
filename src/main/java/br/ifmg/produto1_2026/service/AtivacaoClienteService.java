@@ -19,8 +19,8 @@ public class AtivacaoClienteService {
 
 
    // @TipoDoNotificador(value = TipoDeNotificacao.SMS)
-    @Autowired   //<--- essa é uma forma de injetar o bean (forma 1)
-    private Notificador notificador;
+   // @Autowired   //<--- essa é uma forma de injetar o bean (forma 1)
+   // private Notificador notificador;
 
     //private List<Notificador> notificadores;
 
@@ -42,8 +42,8 @@ public class AtivacaoClienteService {
     public void ativar(Usuario usuario, String mensagem){
         //usuario.ativo(); simulando ativar o usuario.
 
-       if (notificador != null)
-         notificador.notificar(usuario, mensagem);
+      // if (notificador != null)
+      //   notificador.notificar(usuario, mensagem);
        //for (Notificador notificador : notificadores) {
        //    notificador.notificar(usuario, mensagem);
        //}
