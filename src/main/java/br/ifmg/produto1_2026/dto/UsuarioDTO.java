@@ -4,6 +4,8 @@ import br.ifmg.produto1_2026.entities.Usuario;
 import jakarta.persistence.Column;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 
 import java.time.Instant;
 import java.util.ArrayList;
@@ -13,10 +15,13 @@ import java.util.Objects;
 public class UsuarioDTO {
 
     private Long id;
+    @NotBlank(message = "Campo nome obrigatório")
     private String nome;
     private String telefone;
+    @NotBlank(message = "Email obrigatório")
+    @Email(message = "Email inválido")
     private String email;
-    private String senha;
+
 
     private List<PerfilDTO> perfis
                     = new ArrayList<>();
@@ -31,7 +36,7 @@ public class UsuarioDTO {
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
-        this.senha = senha;
+
 
 
 
@@ -42,7 +47,7 @@ public class UsuarioDTO {
         this.nome = usuario.getNome();
         this.telefone = usuario.getTelefone();
         this.email = usuario.getEmail();
-        this.senha = usuario.getSenha();
+
 
         usuario
                 .getPerfis()
@@ -88,13 +93,7 @@ public class UsuarioDTO {
         this.email = email;
     }
 
-    public String getSenha() {
-        return senha;
-    }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
 
     public List<PerfilDTO> getPerfis() {
         return perfis;
@@ -111,7 +110,6 @@ public class UsuarioDTO {
                 ", nome='" + nome + '\'' +
                 ", telefone='" + telefone + '\'' +
                 ", email='" + email + '\'' +
-                ", senha='" + senha + '\'' +
                 '}';
     }
 

@@ -3,6 +3,7 @@ package br.ifmg.produto1_2026.service;
 
 import br.ifmg.produto1_2026.dto.PerfilDTO;
 import br.ifmg.produto1_2026.dto.UsuarioDTO;
+import br.ifmg.produto1_2026.dto.UsuarioInsertDTO;
 import br.ifmg.produto1_2026.entities.Perfil;
 import br.ifmg.produto1_2026.entities.Usuario;
 import br.ifmg.produto1_2026.repositories.PerfilRepository;
@@ -13,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -26,6 +28,8 @@ public class UsuarioService {
     @Autowired
     private PerfilRepository perfilRepository;
 
+    @Autowired
+    private PasswordEncoder encoder;
 
     @Transactional(readOnly = true)
     public Page<UsuarioDTO> findAll(Pageable pageRequest) {
@@ -53,11 +57,13 @@ public class UsuarioService {
     }
 
     @Transactional
-    public UsuarioDTO insert(UsuarioDTO dto) {
+    public UsuarioDTO insert(UsuarioInsertDTO dto) {
 
         Usuario entity = new Usuario();
         copyDtoToEntity(dto, entity);
-
+        entity.setSenha(
+                encoder.encode(dto.getSenha())
+                       );
 
         Usuario novo = repository.save(entity);
         return new UsuarioDTO(novo);
@@ -98,7 +104,6 @@ public class UsuarioService {
     private void copyDtoToEntity(UsuarioDTO dto, Usuario entity) {
         entity.setNome(dto.getNome());
         entity.setEmail(dto.getEmail());
-        entity.setSenha(dto.getSenha());
         entity.setTelefone(dto.getTelefone());
 
         entity.getPerfis().clear();
