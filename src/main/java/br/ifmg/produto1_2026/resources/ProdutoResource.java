@@ -7,6 +7,7 @@ import br.ifmg.produto1_2026.service.ProdutoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -69,7 +70,7 @@ public ResponseEntity<ProdutoDTO> produto(@PathVariable Long id){
         }
 )
 public ResponseEntity<ProdutoDTO> insert(
-        @RequestBody ProdutoDTO dto){
+        @RequestBody @Valid ProdutoDTO dto){
     //inserindo no BD e pegando o objeto inserido.
     ProdutoDTO retorno
             = produtoService.insert(dto);
@@ -124,7 +125,7 @@ public ResponseEntity<Void> delete(@PathVariable Long id){
 )
 public ResponseEntity<ProdutoDTO> update(
         @PathVariable Long id,
-        @RequestBody ProdutoDTO dto){
+        @RequestBody  @Valid  ProdutoDTO dto){
 
     ProdutoDTO retorno =  produtoService.update(id,dto);
 

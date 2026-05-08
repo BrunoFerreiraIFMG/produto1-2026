@@ -1,17 +1,17 @@
-2026-05-05 10:16:18.652 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-05 10:16:18.692 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 5004 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
-2026-05-05 10:16:18.693 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-05-05 10:16:30.827 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-05 10:16:30.830 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-05 10:16:30.830 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-05 10:16:30.929 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-05 10:16:31.112 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-05 10:16:31.327 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
-2026-05-05 10:16:31.330 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-05 10:16:31.390 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-05 10:16:31.462 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-05 10:16:31.508 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-05 10:16:31.972 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-05-08 10:05:09.489 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-08 10:05:09.554 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 13396 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
+2026-05-08 10:05:09.554 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
+2026-05-08 10:05:21.800 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-08 10:05:21.802 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-08 10:05:21.803 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-05-08 10:05:21.904 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-08 10:05:22.080 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-08 10:05:22.291 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
+2026-05-08 10:05:22.293 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-08 10:05:22.372 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-08 10:05:22.472 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-05-08 10:05:22.521 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-08 10:05:22.980 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -19,73 +19,38 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-05 10:16:33.083 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-05 10:16:34.875 [main] WARN  >>> o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+2026-05-08 10:05:23.969 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-08 10:05:25.225 [main] WARN  >>> o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 057dac88-b8c5-493e-b1c6-918e88cbcf5d
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-05-05 10:16:35.165 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-05 10:16:35.207 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 17.265 seconds (process running for 17.895)
-2026-05-05 10:16:35.210 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-05-05 10:16:35.210 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-05-05 10:17:42.312 [http-nio-8080-exec-2] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-05 10:27:56.033 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-05 10:27:56.036 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-05 10:28:03.949 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-05 10:28:04.093 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 5648 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
-2026-05-05 10:28:04.094 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-05-05 10:28:16.423 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-05 10:28:16.425 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-05 10:28:16.426 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-05 10:28:16.524 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-05 10:28:16.713 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-05 10:28:16.983 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
-2026-05-05 10:28:16.987 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-05 10:28:17.054 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-05 10:28:17.149 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-05 10:28:17.213 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-05 10:28:17.795 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-05-05 10:28:19.955 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-05 10:28:21.612 [main] WARN  >>> o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: 02da020e-3d97-48fe-ab0a-b15896a4a041
+Using generated security password: 3c08bd28-970e-4c53-9a01-6ca788e905bc
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-05-05 10:28:22.989 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-05 10:28:23.081 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 19.856 seconds (process running for 22.022)
-2026-05-05 10:28:23.089 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-05-05 10:28:23.090 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-05-05 10:28:38.998 [http-nio-8080-exec-3] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-05 10:28:39.681 [http-nio-8080-exec-3] WARN  >>> o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+2026-05-08 10:05:26.204 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-08 10:05:26.239 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 17.419 seconds (process running for 18.134)
+2026-05-08 10:05:26.326 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-08 10:05:26.326 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-08 10:06:28.794 [http-nio-8080-exec-1] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08 10:06:29.079 [http-nio-8080-exec-1] WARN  >>> o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
 	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
 	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
 
-2026-05-05 11:33:40.292 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-05 11:33:40.295 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-05 11:33:49.273 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-05 11:33:49.321 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 14872 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
-2026-05-05 11:33:49.323 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-05-05 11:34:01.310 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-05 11:34:01.312 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-05 11:34:01.313 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-05 11:34:01.429 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-05 11:34:01.584 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-05 11:34:01.784 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
-2026-05-05 11:34:01.786 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-05 11:34:01.840 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-05 11:34:01.910 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-05 11:34:01.957 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-05 11:34:02.377 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-05-08 10:09:17.572 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-08 10:09:17.574 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-08 10:09:26.692 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-08 10:09:26.743 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 14836 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
+2026-05-08 10:09:26.744 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
+2026-05-08 10:09:38.602 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-08 10:09:38.604 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-08 10:09:38.605 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-05-08 10:09:38.696 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-08 10:09:38.865 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-08 10:09:39.050 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
+2026-05-08 10:09:39.052 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-08 10:09:39.103 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-08 10:09:39.169 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-05-08 10:09:39.224 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-08 10:09:39.645 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -93,16 +58,194 @@ This generated password is for development use only. Your security configuration
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-05 11:34:03.412 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-05 11:34:04.628 [main] WARN  >>> o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+2026-05-08 10:09:40.536 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-08 10:09:41.675 [main] WARN  >>> o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 7911ab95-2c5a-4e62-b031-f8988e273f24
+Using generated security password: 113a0e23-aae9-4f51-bf01-caab8554b40a
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-05-05 11:34:05.341 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-05 11:34:05.376 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 16.716 seconds (process running for 17.229)
-2026-05-05 11:34:05.449 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-05-05 11:34:05.449 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-05-05 11:34:42.041 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-05 11:34:42.045 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-08 10:09:42.351 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-08 10:09:42.388 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 16.288 seconds (process running for 16.788)
+2026-05-08 10:09:42.470 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-08 10:09:42.470 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-08 10:09:51.906 [http-nio-8080-exec-2] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08 10:09:52.224 [http-nio-8080-exec-2] WARN  >>> o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<br.ifmg.produto1_2026.dto.ProdutoDTO> br.ifmg.produto1_2026.resources.ProdutoResource.insert(br.ifmg.produto1_2026.dto.ProdutoDTO): [Field error in object 'produtoDTO' on field 'preco': rejected value [-1000.6]; codes [Positive.produtoDTO.preco,Positive.preco,Positive.java.lang.Double,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [produtoDTO.preco,preco]; arguments []; default message [preco]]; default message [O preço do produto deve ser positivo]] ]
+2026-05-08 10:10:15.552 [http-nio-8080-exec-5] WARN  >>> o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<br.ifmg.produto1_2026.dto.ProdutoDTO> br.ifmg.produto1_2026.resources.ProdutoResource.insert(br.ifmg.produto1_2026.dto.ProdutoDTO): [Field error in object 'produtoDTO' on field 'nome': rejected value []; codes [Size.produtoDTO.nome,Size.nome,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [produtoDTO.nome,nome]; arguments []; default message [nome],100,2]; default message [O nome do produto deve ter entre 2 e 100 caractres]] ]
+2026-05-08 10:10:28.776 [http-nio-8080-exec-7] WARN  >>> o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<br.ifmg.produto1_2026.dto.ProdutoDTO> br.ifmg.produto1_2026.resources.ProdutoResource.insert(br.ifmg.produto1_2026.dto.ProdutoDTO): [Field error in object 'produtoDTO' on field 'nome': rejected value []; codes [Size.produtoDTO.nome,Size.nome,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [produtoDTO.nome,nome]; arguments []; default message [nome],100,2]; default message [O nome do produto deve ter entre 2 e 100 caractres]] ]
+2026-05-08 10:11:42.178 [http-nio-8080-exec-9] WARN  >>> o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<br.ifmg.produto1_2026.dto.ProdutoDTO> br.ifmg.produto1_2026.resources.ProdutoResource.insert(br.ifmg.produto1_2026.dto.ProdutoDTO) with 2 errors: [Field error in object 'produtoDTO' on field 'preco': rejected value [-1000.6]; codes [Positive.produtoDTO.preco,Positive.preco,Positive.java.lang.Double,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [produtoDTO.preco,preco]; arguments []; default message [preco]]; default message [O preço do produto deve ser positivo]] [Field error in object 'produtoDTO' on field 'nome': rejected value []; codes [Size.produtoDTO.nome,Size.nome,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [produtoDTO.nome,nome]; arguments []; default message [nome],100,2]; default message [O nome do produto deve ter entre 2 e 100 caractres]] ]
+2026-05-08 10:39:17.379 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-08 10:39:17.382 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-08 10:39:23.370 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-08 10:39:23.421 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 12016 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
+2026-05-08 10:39:23.421 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
+2026-05-08 10:39:35.415 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-08 10:39:35.417 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-08 10:39:35.417 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-05-08 10:39:35.515 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-08 10:39:35.689 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-08 10:39:35.871 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
+2026-05-08 10:39:35.873 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-08 10:39:35.928 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-08 10:39:36.000 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-05-08 10:39:36.043 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-08 10:39:36.458 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-08 10:39:37.464 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-08 10:39:38.604 [main] WARN  >>> o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f20e28aa-8704-4564-a485-933f55b1c56b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-08 10:39:39.286 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-08 10:39:39.319 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 16.572 seconds (process running for 17.095)
+2026-05-08 10:39:39.406 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-08 10:39:39.406 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-08 10:39:56.172 [http-nio-8080-exec-1] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08 11:13:17.976 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-08 11:13:17.978 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-08 11:13:37.231 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-08 11:13:37.286 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 6672 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
+2026-05-08 11:13:37.287 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
+2026-05-08 11:13:49.225 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-08 11:13:49.227 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-08 11:13:49.228 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-05-08 11:13:49.326 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-08 11:13:49.485 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-08 11:13:49.701 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
+2026-05-08 11:13:49.703 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-08 11:13:49.761 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-08 11:13:49.854 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-05-08 11:13:49.901 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-08 11:13:50.328 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-08 11:13:51.313 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-08 11:13:52.193 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'usuarioResource': Unsatisfied dependency expressed through field 'usuarioService': Error creating bean with name 'usuarioService': Unsatisfied dependency expressed through field 'repository': Error creating bean with name 'usuarioRepository' defined in br.ifmg.produto1_2026.repositories.UsuarioRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract void br.ifmg.produto1_2026.repositories.UsuarioRepository.loadUserByUsername(java.lang.String); Reason: Failed to create query for method public abstract void br.ifmg.produto1_2026.repositories.UsuarioRepository.loadUserByUsername(java.lang.String); No property 'loadUserByUsername' found for type 'Usuario'
+2026-05-08 11:13:52.199 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-08 11:13:52.202 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-08 11:13:52.204 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-05-08 11:13:52.233 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'usuarioResource': Unsatisfied dependency expressed through field 'usuarioService': Error creating bean with name 'usuarioService': Unsatisfied dependency expressed through field 'repository': Error creating bean with name 'usuarioRepository' defined in br.ifmg.produto1_2026.repositories.UsuarioRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract void br.ifmg.produto1_2026.repositories.UsuarioRepository.loadUserByUsername(java.lang.String); Reason: Failed to create query for method public abstract void br.ifmg.produto1_2026.repositories.UsuarioRepository.loadUserByUsername(java.lang.String); No property 'loadUserByUsername' found for type 'Usuario'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:18)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'usuarioService': Unsatisfied dependency expressed through field 'repository': Error creating bean with name 'usuarioRepository' defined in br.ifmg.produto1_2026.repositories.UsuarioRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract void br.ifmg.produto1_2026.repositories.UsuarioRepository.loadUserByUsername(java.lang.String); Reason: Failed to create query for method public abstract void br.ifmg.produto1_2026.repositories.UsuarioRepository.loadUserByUsername(java.lang.String); No property 'loadUserByUsername' found for type 'Usuario'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'usuarioRepository' defined in br.ifmg.produto1_2026.repositories.UsuarioRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract void br.ifmg.produto1_2026.repositories.UsuarioRepository.loadUserByUsername(java.lang.String); Reason: Failed to create query for method public abstract void br.ifmg.produto1_2026.repositories.UsuarioRepository.loadUserByUsername(java.lang.String); No property 'loadUserByUsername' found for type 'Usuario'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 35 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void br.ifmg.produto1_2026.repositories.UsuarioRepository.loadUserByUsername(java.lang.String); Reason: Failed to create query for method public abstract void br.ifmg.produto1_2026.repositories.UsuarioRepository.loadUserByUsername(java.lang.String); No property 'loadUserByUsername' found for type 'Usuario'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:92)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:434)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:355)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135)
+	at org.springframework.data.util.Lazy.get(Lazy.java:113)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:361)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	... 45 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract void br.ifmg.produto1_2026.repositories.UsuarioRepository.loadUserByUsername(java.lang.String); No property 'loadUserByUsername' found for type 'Usuario'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:260)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:116)
+	... 57 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'loadUserByUsername' found for type 'Usuario'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:455)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:431)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:384)
+	at org.springframework.util.ConcurrentReferenceHashMap$6.execute(ConcurrentReferenceHashMap.java:402)
+	at org.springframework.util.ConcurrentReferenceHashMap$Segment.doTask(ConcurrentReferenceHashMap.java:702)
+	at org.springframework.util.ConcurrentReferenceHashMap.doTask(ConcurrentReferenceHashMap.java:584)
+	at org.springframework.util.ConcurrentReferenceHashMap.computeIfAbsent(ConcurrentReferenceHashMap.java:396)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:366)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:344)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:259)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:260)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:389)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:390)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:100)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101)
+	... 61 common frames omitted
