@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
-public class Produto12026Application implements CommandLineRunner {
+public class Produto12026Application /*implements CommandLineRunner*/ {
 
     @Autowired
     private PasswordEncoder encoder;
@@ -18,12 +18,12 @@ public class Produto12026Application implements CommandLineRunner {
         SpringApplication.run(Produto12026Application.class, args);
 
 
-	}
+	}/*
     //17 - Inicio do Spring Security
     @Override
     public void run(String... args) throws Exception {
         String senha = encoder.encode("123456");
         System.out.println("=========================");
         System.out.println("Nova senha: "+senha);
-    }
+    }*/
 }

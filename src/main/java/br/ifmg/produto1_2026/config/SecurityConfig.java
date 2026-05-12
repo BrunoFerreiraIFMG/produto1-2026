@@ -9,10 +9,10 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-
+//19 - Spring secutity aula 3
 @Configuration
 public class SecurityConfig {
-
+/*
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
@@ -37,7 +37,7 @@ public class SecurityConfig {
         return http.build();
     }
 
-
+*/
 
     @Bean
     public PasswordEncoder passwordEncoder() {
