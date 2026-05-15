@@ -1,17 +1,17 @@
-2026-05-12 10:29:18.742 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-12 10:29:18.822 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 10036 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
-2026-05-12 10:29:18.824 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-05-12 10:29:30.968 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-12 10:29:30.968 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-12 10:29:30.968 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-12 10:29:31.072 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-12 10:29:31.246 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-12 10:29:31.480 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
-2026-05-12 10:29:31.482 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-12 10:29:31.532 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-12 10:29:31.642 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-12 10:29:31.692 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-12 10:29:32.217 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-05-15 10:10:27.455 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-15 10:10:27.553 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 14960 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
+2026-05-15 10:10:27.556 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
+2026-05-15 10:10:40.528 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-15 10:10:40.531 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-15 10:10:40.532 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-05-15 10:10:40.629 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-15 10:10:40.919 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-15 10:10:41.158 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
+2026-05-15 10:10:41.165 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-15 10:10:41.221 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-15 10:10:41.313 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-05-15 10:10:41.367 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-15 10:10:41.894 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -19,215 +19,15 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-12 10:29:33.244 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-12 10:29:35.365 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-12 10:29:35.405 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 17.346 seconds (process running for 17.99)
-2026-05-12 10:29:35.480 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-05-12 10:29:35.480 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-05-12 10:29:56.809 [http-nio-8080-exec-9] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-12 11:10:45.910 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-12 11:10:45.912 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-12 11:11:04.553 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-12 11:11:04.621 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 14040 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
-2026-05-12 11:11:04.622 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-05-12 11:11:16.872 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-12 11:11:16.875 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-12 11:11:16.875 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-12 11:11:16.964 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-12 11:11:17.166 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-12 11:11:17.352 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
-2026-05-12 11:11:17.354 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-12 11:11:17.407 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-12 11:11:17.475 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-12 11:11:17.515 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-12 11:11:17.912 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-05-12 11:11:18.823 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-12 11:11:21.449 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-12 11:11:21.484 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 17.532 seconds (process running for 18.061)
-2026-05-12 11:11:21.550 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-05-12 11:11:21.550 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-05-12 11:12:06.181 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-12 11:12:06.184 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-12 11:12:10.333 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-12 11:12:10.408 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 16952 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
-2026-05-12 11:12:10.409 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-05-12 11:12:22.947 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-12 11:12:22.949 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-12 11:12:22.949 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-12 11:12:23.046 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-12 11:12:23.254 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-12 11:12:23.437 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
-2026-05-12 11:12:23.439 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-12 11:12:23.497 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-12 11:12:23.561 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-12 11:12:23.598 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-12 11:12:23.968 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-05-12 11:12:24.872 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-12 11:12:27.503 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-12 11:12:27.543 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 17.803 seconds (process running for 18.334)
-2026-05-12 11:12:27.608 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-05-12 11:12:27.608 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-05-12 11:12:39.465 [http-nio-8080-exec-2] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-12 11:12:39.745 [http-nio-8080-exec-2] WARN  >>> o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
-	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
-	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
-
-2026-05-12 11:24:58.853 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-12 11:24:58.855 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-12 11:25:04.877 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-12 11:25:04.959 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 11644 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
-2026-05-12 11:25:04.961 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-05-12 11:25:17.072 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-12 11:25:17.074 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-12 11:25:17.074 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-12 11:25:17.157 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-12 11:25:17.344 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-12 11:25:17.539 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
-2026-05-12 11:25:17.542 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-12 11:25:17.598 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-12 11:25:17.662 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-12 11:25:17.710 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-12 11:25:18.127 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-05-12 11:25:19.057 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-12 11:25:19.582 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'produto12026Application': Unsatisfied dependency expressed through field 'encoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2026-05-12 11:25:19.592 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-12 11:25:19.596 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-12 11:25:19.600 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-12 11:25:19.640 [main] ERROR >>> o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field encoder in br.ifmg.produto1_2026.Produto12026Application required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
-
-2026-05-12 11:26:47.544 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-12 11:26:47.615 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 15628 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
-2026-05-12 11:26:47.616 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-05-12 11:26:59.767 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-12 11:26:59.769 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-12 11:26:59.769 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-12 11:26:59.845 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-12 11:27:00.034 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-12 11:27:00.213 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
-2026-05-12 11:27:00.216 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-12 11:27:00.266 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-12 11:27:00.331 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-12 11:27:00.371 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-12 11:27:00.792 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-05-12 11:27:01.710 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-12 11:27:02.231 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'produto12026Application': Unsatisfied dependency expressed through field 'encoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2026-05-12 11:27:02.244 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-12 11:27:02.247 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-12 11:27:02.249 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-12 11:27:02.287 [main] ERROR >>> o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field encoder in br.ifmg.produto1_2026.Produto12026Application required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
-
-2026-05-12 11:30:03.688 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-12 11:30:03.761 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 18196 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
-2026-05-12 11:30:03.762 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-05-12 11:30:15.911 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-12 11:30:15.914 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-12 11:30:15.914 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-12 11:30:15.997 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-12 11:30:16.199 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-12 11:30:16.407 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
-2026-05-12 11:30:16.409 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-12 11:30:16.461 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-12 11:30:16.526 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-12 11:30:16.568 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-12 11:30:16.964 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-05-12 11:30:17.947 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-12 11:30:20.732 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-12 11:30:20.766 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 17.668 seconds (process running for 18.26)
-2026-05-12 11:30:20.769 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-05-12 11:30:20.769 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-05-12 11:30:42.972 [http-nio-8080-exec-1] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-12 11:31:03.835 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-12 11:31:03.837 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-12 11:32:07.002 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-12 11:32:07.085 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 21.0.1 with PID 8148 (C:\Users\bruno.ferreira\Documents\produto1-2026\target\classes started by bruno.ferreira in C:\Users\bruno.ferreira\Documents\produto1-2026)
-2026-05-12 11:32:07.085 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-05-12 11:32:19.599 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-12 11:32:19.603 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-12 11:32:19.603 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-12 11:32:19.686 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-12 11:32:19.881 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-12 11:32:20.318 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testbd user=SA
-2026-05-12 11:32:20.320 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-12 11:32:20.438 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-12 11:32:20.524 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-12 11:32:20.580 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-12 11:32:21.042 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-05-12 11:32:22.036 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-12 11:32:24.721 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-12 11:32:24.766 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 18.374 seconds (process running for 19.104)
-2026-05-12 11:32:24.771 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-05-12 11:32:24.771 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-15 10:10:43.980 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-15 10:10:47.641 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-15 10:10:47.715 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 21.144 seconds (process running for 23.312)
+2026-05-15 10:10:47.722 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-15 10:10:47.723 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-15 10:11:00.683 [http-nio-8080-exec-1] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-15 10:14:04.296 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-15 10:14:04.298 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-15 10:14:28.611 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-15 10:14:28.617 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-15 10:18:19.036 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-15 10:18:19.041 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'

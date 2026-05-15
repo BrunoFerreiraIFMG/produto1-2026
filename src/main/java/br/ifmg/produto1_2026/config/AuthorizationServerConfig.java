@@ -161,6 +161,7 @@ public class AuthorizationServerConfig {
 				context.getClaims()
 					.claim("authorities", authorities)
 					.claim("username", user.getUsername());
+
 				// @formatter:on
 			}
 		};
