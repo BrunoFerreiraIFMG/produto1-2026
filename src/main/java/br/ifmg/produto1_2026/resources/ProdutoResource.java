@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -42,6 +43,7 @@ public ResponseEntity<Page<ProdutoDTO>> produtos(Pageable pageable){
     return ResponseEntity.ok().body(produtos);
 };
 
+
 @GetMapping(value = "/{id}", produces = "application/json")
 @Operation(
         summary = "Endpoint retornar todos os produto",
@@ -56,6 +58,8 @@ public ResponseEntity<ProdutoDTO> produto(@PathVariable Long id){
     return ResponseEntity.ok().body(dto);
 }
 
+
+@PreAuthorize("hasAnyRole('ROLE_ADMINISTRADOR', 'ROLE_VENDEDOR')")
 @PostMapping(produces = "application/json")
 @Operation(
         summary = "Endpoint para inserir um produto",
@@ -101,6 +105,8 @@ public ResponseEntity<ProdutoDTO> insert(
                 @ApiResponse(description = "Erro interno no servidor", responseCode = "500"),
         }
 )
+
+@PreAuthorize("hasAnyRole('ROLE_ADMINISTRADOR')")
 public ResponseEntity<Void> delete(@PathVariable Long id){
 
     produtoService.delete(id);
@@ -123,6 +129,8 @@ public ResponseEntity<Void> delete(@PathVariable Long id){
                 @ApiResponse(description = "Erro interno no servidor", responseCode = "500"),
         }
 )
+
+@PreAuthorize("hasAnyRole('ROLE_ADMINISTRADOR', 'ROLE_VENDEDOR')")
 public ResponseEntity<ProdutoDTO> update(
         @PathVariable Long id,
         @RequestBody  @Valid  ProdutoDTO dto){

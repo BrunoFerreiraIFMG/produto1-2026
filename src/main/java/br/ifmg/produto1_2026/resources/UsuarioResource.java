@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -20,7 +21,7 @@ public class UsuarioResource {
     @Autowired
     private UsuarioService usuarioService;
 
-
+@PreAuthorize("hasAnyRole('ROLE_ADMINISTRADOR')")
 @GetMapping
 public ResponseEntity<Page<UsuarioDTO>> usuarios(Pageable pageable){
 
@@ -29,12 +30,14 @@ public ResponseEntity<Page<UsuarioDTO>> usuarios(Pageable pageable){
     return ResponseEntity.ok().body(usuarios);
 };
 
+@PreAuthorize("hasAnyRole('ROLE_ADMINISTRADOR')")
 @GetMapping("/{id}")
 public ResponseEntity<UsuarioDTO> usuario(@PathVariable Long id){
     UsuarioDTO dto= usuarioService.findById(id);
     return ResponseEntity.ok().body(dto);
 }
 
+    //@PreAuthorize("hasAnyRole('ROLE_ADMINISTRADOR')")
 @PostMapping
 public ResponseEntity<UsuarioDTO> insert(
         @RequestBody @Valid UsuarioInsertDTO dto){
@@ -54,6 +57,7 @@ public ResponseEntity<UsuarioDTO> insert(
             .body(retorno);
 }
 
+@PreAuthorize("hasAnyRole('ROLE_ADMINISTRADOR')")
 @DeleteMapping("/{id}")
 public ResponseEntity<Void> delete(@PathVariable Long id){
 
@@ -63,6 +67,7 @@ public ResponseEntity<Void> delete(@PathVariable Long id){
     return ResponseEntity.noContent().build();
 }
 
+//@PreAuthorize("hasAnyRole('ROLE_ADMINISTRADOR')")
 @PutMapping("/{id}")
 public ResponseEntity<UsuarioDTO> update(
         @PathVariable Long id,
