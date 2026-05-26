@@ -46,7 +46,7 @@ public class ProdutoResource {
         return ResponseEntity.ok().body(produtos);
     };
 
-
+// 23 - configurando mysql e flyway
 
 
 
