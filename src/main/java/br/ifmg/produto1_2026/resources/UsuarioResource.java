@@ -44,7 +44,7 @@ public ResponseEntity<UsuarioDTO> insert(
     //inserindo no BD e pegando o objeto inserido.
     UsuarioDTO retorno
             = usuarioService.insert(dto);
-    //criando um link para acessa a categoria criada.
+    //criando um link para acessar o usuario criado.
     URI location = ServletUriComponentsBuilder
             .fromCurrentRequest()
             .path("/{id}")
